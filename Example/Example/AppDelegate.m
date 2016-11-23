@@ -31,7 +31,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     [DDLog addLogger:logger];
 
     DDLogInfo(@"DDAntennaLogger is cool!");
-
+    
+    self.window.rootViewController = [[UIViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
